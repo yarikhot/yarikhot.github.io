@@ -1,6 +1,9 @@
 # HTID:3943857: DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES BELOW
 php_value display_errors 1
 # DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES ABOVE HTID:3943857:
+
+Header Set Acces-Control-Allow-Origin *
+
 <ifModule mod_headers.c>
     <FilesMatch "\.(html|htm)$">
         Header set Cache-Control "max-age=43200000"
