@@ -1,0 +1,152 @@
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 99999;
+	background-color: $white;
+	height: 65px;
+	&__grid {
+		display: grid;
+		grid-template-columns: 1fr 3fr 1fr;
+		height: 100%;
+	}
+	&__logo {
+		margin: auto 0;
+		font-size: 24px;
+		&::before {
+			color: $black;
+		}
+	}
+	&__nav {
+		display: flex;
+		height: 100%;
+		justify-content: space-around;
+		align-items: center;
+	}
+	&__mobile {
+		display: flex;
+		position: fixed;
+		margin-top: 65px;
+		overflow-y: auto;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: calc(100vh - 65px);
+		background-color: #fff;
+		z-index: 99999;
+		flex-direction: column;
+		align-items: center;
+		margin-left: -100%;
+		transition: all $time ease-in-out;
+	}
+	&__mobile--active {
+		margin-left: 0;
+	}
+	&__menu {
+        z-index: 999999;
+        display: flex;
+        justify-content: flex-end;
+		align-items: center;
+		margin-right: 30px;
+    }
+	&__burger {
+        position: relative;
+        display: block;
+        width: 28px;
+		height: 28px;
+		transform: translateY(-25%);
+        span:after, span:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 9px;
+        }
+        span:after{
+            top: 18px;
+        }
+        span{
+            position: relative;
+            display: block;
+        }  
+        span, span:after, span:before {
+            width: 100%;
+			height: 3px;
+			border-radius: 4px;
+            background-color: #2b3191;
+            transition: all 0.3s;
+            backface-visibility: hidden;
+        } 
+        &.on span {
+            background-color: transparent;
+        }  
+        &.on span:before {
+            transform: rotate(45deg) translate(-1px, 0px);
+        }
+        &.on span:after {
+            transform: rotate(-45deg) translate(6px, -7px);
+        }
+    }
+	&__link {
+		position: relative;
+		color: $black;
+		font-family: $opensans;
+		font-size: 16px;
+		font-weight: $regular;
+		line-height: 60px;
+		transition: all $time;
+		&:hover {
+			color: #ef6c00;
+		}
+	}
+	&__user {
+		margin: auto;
+		display: flex;
+	}
+	&__user--mobile {
+		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	&__info {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		justify-content: space-around;
+	}
+	&__face {
+		height: 40px;
+		width: 40px;
+		border-radius: 20px;
+		margin: 0 12px;
+	}
+	&__name {
+		color: #000000;
+		font-family: $opensans;
+		font-size: 14px;
+		font-weight: $regular;
+		@include overcontent;
+	}
+	&__email {
+		color: #8d8c8c;
+		font-family: $opensans;
+		font-size: 12px;
+		font-weight: $regular;
+		@include overcontent;
+	}
+	&__button {
+		font-size: 20px;
+		transition: all $time;
+		&::before {
+			transition: all $time;
+		}
+		&:hover::before {
+			color: #2638bb;
+		}
+		&:focus::before {
+			color: #949ac9;
+		}
+	}
+	
+}

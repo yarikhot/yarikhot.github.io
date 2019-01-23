@@ -1,0 +1,129 @@
+body {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	overflow-x: hidden;
+}
+
+.container {
+	width: 100%;
+	max-width: 1200px;
+	height: 100%;
+	margin: 0 auto;
+	padding: 0 15px;
+	z-index: 1000;
+	position: relative;
+}
+
+.tooltip {
+	position: absolute;
+	font-family: $overpass;
+	top: 27px;
+	padding: 10px;
+	max-width: 90%;
+	color: $white;
+	border-radius: 10px;
+	background-color: #707070;
+	z-index: 99999;
+	word-break: break-all;
+	word-wrap: break-word;
+	line-height: 30px;
+}
+
+
+@mixin btn($color) {
+  overflow: hidden;
+  position: relative;
+  &::after {
+    background: $color;
+    content: "";
+    height: 155px;
+    left: -75px;
+    opacity: 0.2;
+    position: absolute;
+    top: -50px;
+    transform: rotate(35deg);
+    transition: all $time-double cubic-bezier(0.19, 1, 0.22, 1);
+    width: 50px;
+  }
+  &:hover::after {
+    left: 120%;
+    transition: all $time-double cubic-bezier(0.19, 1, 0.22, 1);
+  }
+}
+
+@mixin overcontent() {
+	max-width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: "icomoon" !important;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-logo:before {
+  content: "\e90c";
+}
+.icon-caret-down:before {
+  content: "\e900";
+}
+.icon-cellphone:before {
+  content: "\e901";
+  color: #fff;
+}
+.icon-facebook:before {
+  content: "\e902";
+  color: #fff;
+}
+.icon-instagram:before {
+  content: "\e903";
+  color: #fff;
+}
+.icon-line-menu:before {
+  content: "\e904";
+  color: #283593;
+}
+.icon-linkedin:before {
+  content: "\e905";
+  color: #fff;
+}
+.icon-mail:before {
+  content: "\e906";
+  color: #fff;
+}
+.icon-phone:before {
+  content: "\e907";
+  color: #fff;
+}
+.icon-pinterest:before {
+  content: "\e908";
+  color: #fff;
+}
+.icon-sign-out:before {
+  content: "\e909";
+  color: #283593;
+}
+.icon-twitter:before {
+  content: "\e90a";
+  color: #fff;
+}
+.icon-upload:before {
+  content: "\e90b";
+  color: #ef6c00;
+}

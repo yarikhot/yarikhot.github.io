@@ -1,0 +1,93 @@
+.users {
+	margin-top: 140px;
+	margin-bottom: 150px;
+	text-align: center;
+	height: auto;
+	&__title {
+		color: #000000;
+		font-family: $overpass;
+		font-size: 42px;
+		font-weight: $regular;
+		text-align: center;
+		margin-bottom: 29px;
+		@include overcontent;
+	}
+	&__caption,
+	&__complete {
+		color: #000000;
+		font-family: $opensans;
+		font-size: 18px;
+		font-weight: $regular;
+		text-align: center;
+		margin-bottom: 60px;
+		@include overcontent;
+	}
+	&__complete {
+		margin-top: 30px;
+	}
+	&__box {
+		text-align: left;
+		display: grid;
+		grid-template-columns: repeat(3, calc(100% / 3 - 15px));
+		grid-gap: 30px;
+	}
+	&__img {
+		height: 70px;
+		width: 70px;
+		object-fit: cover;
+		border-radius: 50%;
+	}
+	&__item {
+		display: flex;
+		overflow: hidden;
+	}
+	&__info {
+		display: flex;
+		flex-direction: column;
+		overflow: hidden;
+		margin-left: 10px;
+	}
+	&__name {
+		color: #000000;
+		font-family: $overpass;
+		font-size: 22px;
+		font-weight: $regular;
+		line-height: 50px;
+		@include overcontent;
+	}
+	&__position {
+		color: #4c4b4b;
+		font-family: $opensans;
+		font-size: 14px;
+		font-weight: $regular;
+		@include overcontent;
+	}
+	&__email {
+		color: #4c4b4b;
+		font-family: $opensans;
+		font-size: 14px;
+		font-weight: $regular;
+		@include overcontent;
+	}
+	&__tel {
+		color: #4c4b4b;
+		font-family: $opensans;
+		font-size: 14px;
+		font-weight: $regular;
+		@include overcontent;
+	}
+	&__button {
+		@include overcontent;
+		color: #fc831f;
+		border-radius: 4px;
+		border: 2px solid #ef6c00;
+		margin: 50px auto 0 auto;
+		width: 100%;
+		max-width: 290px;
+		height: 40px;
+		transition: all $time;
+		&:hover {
+			background-color: #fee6d2;
+		}
+	}
+}

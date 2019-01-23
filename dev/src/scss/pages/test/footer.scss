@@ -1,0 +1,95 @@
+.footer {
+	background-color: #283593;
+	position: relative;
+	&::before {
+			content: "";
+			height: 1px;
+			background-color: #5f5fc4;
+			position: absolute;
+			top: 85px;
+			left: 0;
+			width: 100%;
+		}
+	&__head {
+		height: 85px;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		position: relative;
+		
+	}
+	&__logo {
+		margin: auto 0;
+		font-size: 30px;
+		&::before {
+			color: $white;
+			transition: all $time;
+		}
+		&:hover::before {
+			color: #ef6c00;
+		}
+	}
+	&__nav {
+		display: flex;
+		height: 100%;
+		justify-content: flex-end;
+		align-items: center;
+	}
+	&__link {
+		color: $white;
+		font-family: $opensans;
+		font-size: 16px;
+		font-weight: $regular;
+		margin: 10px 0 0 30px;
+		transition: all $time;
+		&:hover {
+			color: #ef6c00;
+		}
+	}
+	&__body {
+		display: grid;
+		grid-template-columns: 1fr 2fr;
+	}
+	&__contacts {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+	}
+	&__contact {
+		color: $white;
+		font-family: $opensans;
+		font-size: 20px;
+		font-weight: $regular;
+		margin-left: 10px;
+		transition: all $time;
+		&:hover {
+			color: #ef6c00;
+		}
+	} 
+	&__other {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		text-align: right;
+	}
+	&__bottom {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin: 30px 0;
+	}
+	&__description {
+		color: $white;
+		font-family: $opensans;
+		font-size: 12px;
+		font-weight: $regular;
+	}
+	&__scon {
+		font-size: 26px;
+		margin-left: 20px;
+		&::before {
+			transition: all $time;
+		}
+		&:hover::before {
+			color: #ef6c00;
+		}
+	}
+}
