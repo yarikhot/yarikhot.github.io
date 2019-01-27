@@ -6,13 +6,13 @@ php_value display_errors 1
 
 <ifModule mod_headers.c>
     <FilesMatch "\.(html|htm)$">
-        Header set Cache-Control "max-age=43200000"
+        Header set Cache-Control "max-age=31536000"
     </FilesMatch>
     <FilesMatch "\.(js|css|txt)$">
-        Header set Cache-Control "max-age=604800000"
+        Header set Cache-Control "max-age=31536000"
     </FilesMatch>
     <FilesMatch "\.(flv|swf|ico|gif|jpg|jpeg|png|ttf|svg)$">
-        Header set Cache-Control "max-age=2592000000"
+        Header set Cache-Control "max-age=31536000"
     </FilesMatch>
     <FilesMatch "\.(pl|php|cgi|spl|scgi|fcgi)$">
         Header unset Cache-Control
@@ -38,6 +38,7 @@ ExpiresDefault "access plus 5 seconds"
 # Cache Images
 ExpiresByType image/x-icon "access plus 2592000 seconds"
 ExpiresByType image/jpeg "access plus 2592000 seconds"
+ExpiresByType image/jpg "access plus 2592000 seconds"
 ExpiresByType image/png "access plus 2592000 seconds"
 ExpiresByType image/gif "access plus 2592000 seconds"
 ExpiresByType image/svg+xml "access plus 2592000 seconds"
@@ -47,6 +48,7 @@ ExpiresByType application/vnd.ms-fontobject "access plus 2592000 seconds"
 ExpiresByType application/x-font-ttf "access plus 2592000 seconds"
 ExpiresByType application/x-font-opentype "access plus 2592000 seconds"
 ExpiresByType application/x-font-woff "access plus 2592000 seconds"
+ExpiresByType application/x-font-woff2 "access plus 2592000 seconds"
 ExpiresByType image/svg+xml "access plus 2592000 seconds"
 
 # Cache other content types (Flash, CSS, JS, HTML, XML)
