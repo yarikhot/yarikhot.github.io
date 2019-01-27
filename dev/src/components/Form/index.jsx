@@ -98,7 +98,7 @@ class Form extends Component {
                 // 'Accept': 'multipart/form-data',
                 // 'Access-Control-Allow-Credentials': 'true',
                 // "Access-Control-Allow-Methods": "GET,POST,PUT,DELETE,OPTIONS",
-                "Access-Control-Allow-Headers": "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With",
+                // "Access-Control-Allow-Headers": "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With",
                 // 'Content-Type': 'application/x-www-form-urlencoded, multipart/form-data, text/plain'
             }
         };
@@ -112,30 +112,6 @@ class Form extends Component {
                     console.log(error);
                     alert(error);
                 });
-
-            // fetch(url,
-            //     {
-            //         headers: {
-            //             'Authorization': this.props.token,
-            //             'Access-Control-Allow-Origin': '*',
-            //             'X-Requested-With': 'XMLHttpRequest',
-            //             // 'Accept': 'multipart/form-data',
-            //             'Access-Control-Allow-Credentials': 'true',
-            //             "Access-Control-Allow-Methods": "GET,POST,PUT,DELETE,OPTIONS",
-            //             "Access-Control-Allow-Headers": "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With",
-            //             // 'Content-Type': 'application/x-www-form-urlencoded, multipart/form-data, text/plain'
-            //         },
-            //         method: "POST",
-            //         body: {...user}
-            //     })
-            //     .then(response => {
-            //         console.log(response);
-            //     })
-            //     .then(() => this.props.actions.getOurUsers(this.props.counter))
-            //     .catch(error => {
-            //         console.log(error);
-            //         alert(error);
-            //     });
         }
     }
 
