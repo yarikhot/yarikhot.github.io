@@ -38,7 +38,6 @@ class Users extends Component {
     addUsers(e) {
         e.preventDefault();
         
-        // this.props.actions.setCount(this.props.count);
         this.props.actions.getOurUsers(this.props.count);
     }
 
