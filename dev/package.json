@@ -10,6 +10,7 @@
     "prop-types": "^15.6.2",
     "react": "^16.6.3",
     "react-bootstrap": "^0.32.4",
+    "react-device-detect": "^1.6.2",
     "react-dom": "^16.6.3",
     "react-ellipsis-with-tooltip": "^1.0.8",
     "react-input-mask": "^2.0.4",
