@@ -44,16 +44,16 @@ self.__precacheManifest = [
     "url": "/static/media/man-mobile.2afa7771.svg"
   },
   {
+    "revision": "213c4a5f171bea6acdf9bac01f07440f",
+    "url": "/static/media/icomoon.213c4a5f.eot"
+  },
+  {
     "revision": "b6d65543cafc38e75b6cd3cb9ee1312e",
     "url": "/static/media/icomoon.b6d65543.ttf"
   },
   {
     "revision": "6bcb79c9ca55ab995ea171d131d6377f",
     "url": "/static/media/icomoon.6bcb79c9.woff"
-  },
-  {
-    "revision": "213c4a5f171bea6acdf9bac01f07440f",
-    "url": "/static/media/icomoon.213c4a5f.eot"
   },
   {
     "revision": "2b1580616e1576538cc9",
@@ -80,16 +80,16 @@ self.__precacheManifest = [
     "url": "/static/media/sourcesansprolight-webfont.1072e5d2.woff"
   },
   {
-    "revision": "d729db3512dc6725a22541c1a5a54736",
-    "url": "/static/media/overpass-light-webfont.d729db35.woff2"
-  },
-  {
-    "revision": "055485eb16b844b79b1bb5f872004fdb",
-    "url": "/static/media/icomoon.055485eb.svg"
+    "revision": "78054302ecbda1ce473c30e1852fff21",
+    "url": "/static/media/overpass-regular-webfont.78054302.woff2"
   },
   {
     "revision": "c13d29511fdf88f2e54e358534f9ad8e",
     "url": "/static/media/overpass-bold-webfont.c13d2951.woff"
+  },
+  {
+    "revision": "96d863b2b4498822cfa191731ee193e9",
+    "url": "/static/media/overpass-regular-webfont.96d863b2.woff"
   },
   {
     "revision": "1c31bebbcc2fad162392bb84f9f151c3",
@@ -100,12 +100,12 @@ self.__precacheManifest = [
     "url": "/static/media/overpass-light-webfont.ebcf9318.woff"
   },
   {
-    "revision": "78054302ecbda1ce473c30e1852fff21",
-    "url": "/static/media/overpass-regular-webfont.78054302.woff2"
+    "revision": "d729db3512dc6725a22541c1a5a54736",
+    "url": "/static/media/overpass-light-webfont.d729db35.woff2"
   },
   {
-    "revision": "96d863b2b4498822cfa191731ee193e9",
-    "url": "/static/media/overpass-regular-webfont.96d863b2.woff"
+    "revision": "055485eb16b844b79b1bb5f872004fdb",
+    "url": "/static/media/icomoon.055485eb.svg"
   },
   {
     "revision": "2f587cc7de97ad85654ac3bee1136bef",
